@@ -22,8 +22,8 @@ export class UserEntity {
   password: string;
   @Column({ name: 'type_user', nullable: false })
   typeUser: number;
-  @CreateDateColumn({ name: 'create_at' })
-  create_at: Date;
-  @UpdateDateColumn({ name: 'update_at' })
-  update_at: Date;
+  @CreateDateColumn({ name: 'created_at' })
+  created_at: Date;
+  @UpdateDateColumn({ name: 'updated_at' })
+  updated_at: Date;
 }
